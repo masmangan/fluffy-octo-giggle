@@ -58,5 +58,24 @@ public class ConjuntoTest
         assertArrayEquals(r, Conjunto.unir(a, b));
     }
 
+
+    @Test
+    public void a12E9ResultaEm129()
+    {
+        int[] a = {1, 2};
+        int[] b = {9};
+        int[] r = {1, 2, 9};        
+        assertArrayEquals(r, Conjunto.unir(a, b));
+    }
+    
+    @Test
+    public void a1Ea1ResultaEma11()
+    {
+        int[] a = {1};
+        int[] b = {1};
+        int[] r = {1, 1};        
+        assertArrayEquals(r, Conjunto.unir(a, b));
+    }
 }
+
 
